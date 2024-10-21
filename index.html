@@ -5,24 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Article preview component</title>
-  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
-  <main class="container">
-    <img class="container__image" src="./images/drawers.jpg" alt="A green dresser with two white frames, one written 'love will keep us alive' and other with a painting that is not beeing completely visible because of a brown pot with hay in front of it">
+<body class="layout layout--full-height layout--centered bg--light-grayish-blue padding--layout">
+  <main class="container bg--white">
+    <div class="container__image-wrapper">
+      <img class="container__image" src="./images/drawers.jpg" alt="A green dresser with two white frames, one written 'love will keep us alive' and other with a painting that is not beeing completely visible because of a brown pot with hay in front of it">
+    </div>
     <h1 class="container__title text--dark-blue ">Shift the overall look and feel by adding these wonderful
     touches to furniture in your home</h1>
-    <p class="container__text text--grayish-blue">
+    <p class="container__text text--desatured-dark-blue">
       Ever been in a room and felt like something was missing? Perhaps
       it felt slightly bare and uninviting. I’ve got some simple tips
       to help you make any room feel complete.
     </p>
     <div class="post-info">
       <img class="post-info__image" src="./images/avatar-michelle.jpg" alt="">
-      <p class="post-info__author text--dark-blue">Michelle Appleton</p>
-      <p class="post-info__date text--grayish-blue">28 Jun 2020</p>
-      <button class="post-info__share">Share</button>
+      <div class="post-info__details">
+        <p class="post-info__author text--dark-blue">Michelle Appleton</p>
+        <p class="post-info__date text--grayish-blue">28 Jun 2020</p>
+      </div>
+      <button class="button--share bg--light-grayish-blue">
+        <img src="./images/icon-share.svg" alt="share" class="button--share__icon">
+      </button>
     </div>
   </main>
   

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root{
+    font-size: 62.5%;
+
+    --dark-grayish-blue: hsl(217, 19%, 35%);
+    --desatured-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+
+    --font-manrope: "Manrope", serif;
+    --font-weight-regular: 500;
+    --font-weight-bold: 700;
+}
+
+/* Layout */
+.layout--full-height {
+    height: 100vh;
+  }
+
+  .layout--centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.padding--layout{
+    padding-inline: 2.5rem;
+}
+
+.padding-container{
+    padding-inline: 2em;
+}
+
+/*Container structure*/
+
+.container{ 
+    display: flex;
+    flex-flow: column;
+    border-radius: 1rem;
+    padding-inline: 3.5rem;
+    font: normal var(--font-weight-regular) 1.4rem/150% var(--font-manrope);
+}
+
+.container__image-wrapper{
+    margin: -3.5rem -3.5rem 4rem -3.5rem;
+    overflow: hidden;
+    aspect-ratio: 15/10;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.container__image{
+    width: 100%;
+    object-fit: contain;
+    object-position: top;
+}
+
+.container__title{
+    font-size: 1.7rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 150%;
+}
+
+.container__text{
+    margin-block: 1em;
+    min-width: 31.5ch;
+}
+
+/*post-info structure*/
+.post-info{
+    display: flex;
+    margin-block: 1em 1.8em;
+}
+
+.post-info__image{
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.post-info__details{
+    padding-inline: 1.5em;
+    align-self: center;
+}
+
+/* Share Button */
+.button--share{
+    width: 3.5rem;
+    height: 3.5rem;
+    align-self: center;
+    border-radius: 50%;
+    margin-inline-start: auto;
+    border: none;
+}
+
+.button--share__icon{
+    width: 70%;
+    object-position: center;
+}
+
+  /* Skins and Themes*/
+.bg--light-grayish-blue {
+    background-color: var(--light-grayish-blue);
+}
+
+.bg--white{
+    background-color: white;
+}
+
+.text--dark-blue{
+    color: var(--dark-grayish-blue);
+    font-weight: var(--font-weight-bold);
+}
+
+.text--desatured-dark-blue{
+    color: var(--desatured-dark-blue);
+}
+
+.text--grayish-blue{
+    color: var(--grayish-blue);
+}
+
+/* Attribution */
+.attribution {
+    font-size: 1.1rem; 
+    text-align: center;
+}
+.attribution__link {
+    color: hsl(228, 45%, 44%);
+}
