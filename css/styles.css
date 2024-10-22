@@ -38,6 +38,7 @@
 .container{ 
     display: flex;
     flex-flow: column;
+    position: relative;
     border-radius: 1rem;
     padding-inline: 3.5rem;
     font: normal var(--font-weight-regular) 1.4rem/150% var(--font-manrope);
@@ -70,7 +71,7 @@
 /*post-info structure*/
 .post-info{
     display: flex;
-    margin-block: 1em 1.8em;
+    margin-block: 1em 1em;
 }
 
 .post-info__image{
@@ -91,6 +92,7 @@
     border-radius: 50%;
     margin-inline-start: auto;
     border: none;
+    z-index: 2;
 }
 
 .button--share__icon{
@@ -101,16 +103,17 @@
 .button--share:hover, .button--share:focus{
     cursor: pointer;
     background-color: var(--grayish-blue);
-    color: white;
 }
 
 .share-section{
-    display: flex;
+    display: none;
     align-items: center;
+    position: absolute;
+    min-width: 100%;
+    bottom: 0;
     z-index: 1;
     margin: 0rem -3.5rem;
-    padding-inline-end: 7rem;
-    padding-block: 1.5em;
+    padding-block: 2em;
     border-radius: 0rem 0rem 1rem 1rem;
 }
 
@@ -118,12 +121,25 @@
     text-transform: uppercase;
     letter-spacing: 0.5em;
     padding-inline: 2.5em 1.2em;
+    font-size: 1.3rem;
 }
 
 .share-section__icon{
     display: flex;
     align-items: center;
     padding-inline-end: 1.3em;
+}
+
+/* Attribution */
+.attribution {
+    font-size: 1.3rem; 
+    text-align: center;
+    position: fixed;
+    inset-block-end: 0;
+    padding-block-end: 0.2em;
+}
+.attribution__link {
+    color: hsl(228, 45%, 44%);
 }
 
   /* Skins and Themes*/
@@ -144,6 +160,10 @@
     font-weight: var(--font-weight-bold);
 }
 
+.bg--desatured-dark-blue{
+    background-color: var(--desatured-dark-blue);
+}
+
 .text--desatured-dark-blue{
     color: var(--desatured-dark-blue);
 }
@@ -154,14 +174,6 @@
 
 .text--white{
     color: var(--light-grayish-blue);
-    font-weight: 500;
+    font-weight: 50;
 }
 
-/* Attribution */
-.attribution {
-    font-size: 1.1rem; 
-    text-align: center;
-}
-.attribution__link {
-    color: hsl(228, 45%, 44%);
-}
