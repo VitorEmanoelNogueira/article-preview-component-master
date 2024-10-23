@@ -5,7 +5,7 @@ button.addEventListener('touch', showShare);
 
 function showShare() {
     const shareSection = document.querySelector('.share-section')
-    const iconDesign = document.querySelector('.icon__design');
+    const iconDesign = document.querySelector('.button-icon__design');
 
     shareSection.style.display = (shareSection.style.display === "none" || shareSection.style.display === "") ? "flex" : "none";
 

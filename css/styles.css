@@ -42,8 +42,6 @@
     position: relative;
     border-radius: 1rem;
     padding-inline: 3.5rem;
-    font: normal var(--font-weight-regular) clamp(1.3rem, 1.2vw + 1rem, 1.5rem)
-    /150% var(--font-manrope);
 }
 
 .container__image-wrapper{
@@ -58,6 +56,11 @@
     height: 100%;
     object-fit: cover;
     object-position: top;
+}
+
+.content{
+    font: normal var(--font-weight-regular) clamp(1.3rem, 1.2vw + 1rem, 1.5rem)
+    /150% var(--font-manrope);
 }
 
 .content__title{
@@ -87,10 +90,14 @@
     align-self: center;
 }
 
+.post-info__author{
+    margin-block-end: 0.2em;
+}
+
 /* Share Button */
 .button--share{
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3.8rem;
+    height: 3.8rem;
     align-self: center;
     border-radius: 50%;
     margin-inline-start: auto;
@@ -98,7 +105,7 @@
     z-index: 2;
 }
 
-.button--share__icon{
+.button-icon{
     width: 70%;
     object-position: center;
 }
@@ -124,13 +131,16 @@
     text-transform: uppercase;
     letter-spacing: 0.5em;
     padding-inline: 2.5em 1.2em;
-    font-size: 1.3rem;
 }
 
-.share-section__icon{
+.share-link{
     display: flex;
     align-items: center;
     padding-inline-end: 1.3em;
+}
+
+.share-link__icon{
+    height: 2.5rem
 }
 
 /* Attribution */
@@ -227,7 +237,29 @@
     padding-inline: 1.2em;
 }
 
+.icon__design{
+    width: 300px;
+    height: auto;
+}
+
 .button--share{
     margin-inline-end: 0.5em;
 }
+
+.share-section{
+    display: flex;
+    border-radius: 1em;
+    min-width: 0;
+    margin: 0;
+    padding: 1.5em 1.8em;
+    inset-block-end: 7em;
+    inset-inline-end: -4.5em
+
+}
+
+.share-section__text{
+    padding-inline: 1.2em
+}
+
+
 }
